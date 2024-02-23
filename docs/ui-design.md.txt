@@ -9,15 +9,15 @@ El diseño completo está disponible en [Figma](https://www.figma.com/file/0hGka
    Al ingresar a la aplicación, los usuarios serán recibidos con una lista dinámica de noticias actuales provenientes de diversas fuentes confiables.
 
 
-   [Untitled-page-0001.jpg](https://postimg.cc/7JvZ1YcV)
+   [![Untitled-page-0001.jpg](https://i.postimg.cc/3NN0TkFP/Untitled-page-0001.jpg)](https://postimg.cc/7JvZ1YcV)
 
 2. Titulares
   Al seleccionar una noticia destacada, los usuarios accederán a una lista de titulares relevantes, permitiéndoles explorar las noticias más importantes de manera rápida y eficiente.
 
-  [Untitled-page-0002.jpg](https://postimg.cc/Xr2NHgmX)
+ [![Untitled-page-0002.jpg](https://i.postimg.cc/5tJHt7m5/Untitled-page-0002.jpg)](https://postimg.cc/Xr2NHgmX)
 
 3. Biblioteca
 
   Además, la sección de Biblioteca brinda a los usuarios la capacidad de buscar noticias específicas mediante el uso de filtros en las noticias asegurando una experiencia personalizada y enfocada en sus intereses.
 
-   [image.png](https://postimg.cc/w3JhCt69)
+  [![image.png](https://i.postimg.cc/1R7JN62V/image.png)](https://postimg.cc/w3JhCt69)
