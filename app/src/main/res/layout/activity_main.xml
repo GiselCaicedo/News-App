@@ -2,167 +2,171 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize">
+
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="410dp"
-        android:layout_height="107dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/backButton"
+        android:layout_width="58dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="8dp"
+        android:padding="6dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/horizontal_line" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="362dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="244dp"
-        android:text="Feature: Insights from a Renowned Coach"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.737"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="171dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="84dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/image__1_" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="162dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="144dp"
-        android:text="Exclusive interview with a top football coach on his journey to success and leadership in sports."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
-        app:layout_constraintStart_toEndOf="@+id/imageView3" />
-
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="103dp"
-        android:layout_height="56dp"
-        android:background="#00FFFFFF"
-        android:backgroundTint="#FFFFFF"
-        android:visibility="visible"
-        app:icon="@drawable/_1972"
-        app:iconGravity="textEnd"
-        app:iconPadding="16dp"
-        app:iconSize="25dp"
-        app:iconTint="@color/black"
-        app:iconTintMode="src_in"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:visibility="visible" />
-
-    <Button
-        android:id="@+id/button3"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="103dp"
-        android:layout_height="56dp"
-        android:background="#00FFFFFF"
-        app:icon="@drawable/brujula"
-        app:iconGravity="textEnd"
-        app:iconSize="25dp"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:rippleColor="@color/white"
-        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="106dp"
-        android:layout_height="56dp"
-        android:background="#00FFFFFF"
-        android:textColor="#757575"
-        app:icon="@drawable/download"
-        app:iconGravity="textEnd"
-        app:iconSize="25dp"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/button5"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="106dp"
-        android:layout_height="56dp"
-        android:background="#00FFFFFF"
-        android:textColor="#757575"
-        app:icon="@drawable/notificaciones"
-        app:iconGravity="textEnd"
-        app:iconSize="25dp"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/button6"
-        style="@style/Widget.Material3.Button.TextButton"
-        android:layout_width="125dp"
-        android:layout_height="53dp"
-        android:background="#00FFFFFF"
-        android:text="Deep Dive"
+        android:id="@+id/textView"
+        android:layout_width="311dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:text="Discover"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.667"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.186" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/app_name"
-        app:icon="@drawable/compartir"
-        app:iconGravity="textEnd"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.859"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.243" />
+    <com.google.android.material.textfield.TextInputLayout
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/app_name"
-        app:icon="@drawable/guardar"
-        app:iconGravity="textEnd"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
+        android:id="@+id/usernameTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Search for news"
+        app:startIconDrawable="@drawable/baseline_search_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <GridLayout
+        android:layout_width="376dp"
+        android:layout_height="216dp"
+        android:layout_margin="20dp"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:rowCount="1"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="220dp">
+
+        <!-- CardView 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <!-- Contenido de la CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="129dp"
+                    android:layout_height="96dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tu_imagen_1" />
+
+                <TextView
+                    android:id="@+id/textTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Latest Updates"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textDescription1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2022"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <!-- Contenido de la CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="131dp"
+                    android:layout_height="97dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tu_imagen_2" />
+
+                <TextView
+                    android:id="@+id/textTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Key Political Events"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textDescription2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2024"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
