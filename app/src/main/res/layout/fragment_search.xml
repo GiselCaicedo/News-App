@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize"
+    app:layoutDescription="@xml/fragment_search_scene">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="294dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Discover"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Título "Trending now" -->
+
+    <!-- Título "For you" -->
+
+    <!-- Nueva tarjeta 1 -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Search for news"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:startIconDrawable="@drawable/baseline_search_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/trendingNowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Trending now"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="353dp"
+            android:layout_height="235dp"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:rowCount="1">
+
+            <!-- CardView 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shadow"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="213dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageTech2"
+                        android:layout_width="115dp"
+                        android:layout_height="96dp"
+                        android:background="@drawable/rounded_corner"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/imagenuno" />
+
+
+                    <TextView
+                        android:id="@+id/textTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="Tech breakthroughs"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDescription1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2022"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <!-- Contenido de la CardView -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="213dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageTech"
+                        android:layout_width="120dp"
+                        android:layout_height="96dp"
+                        android:background="@drawable/rounded_corner"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/imagendos" />
+
+
+                    <TextView
+                        android:id="@+id/textTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="Healthy living tips"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDescription2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2024"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layoutDescription="@xml/fragment_search_xml_constraintlayout_scene"
+        app:layout_constraintTop_toBottomOf="@+id/forYouTextView">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            app:cardCornerRadius="8dp">
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <!-- Nueva tarjeta 2 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_home_24"
+  />
+
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_search_24"
+            />
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_notifications_24" />
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_newspaper_24" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shadow"
+        android:padding="16dp"
+        app:layoutDescription="@xml/fragment_search_xml_relativelayout_scene"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="449dp">
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corner"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagentres"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Texto -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:text="Tech breakthroughs\n2021\n★ 4.7 (250 reviews)"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="-78dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <ImageView
+        android:id="@+id/downloadImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/notificationImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/downloadImageView"
+        app:layout_constraintTop_toTopOf="@+id/downloadImageView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:padding="6dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shadow"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="595dp">
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corner"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagencuatro" />
+
+        <!-- Texto -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_toEndOf="@id/imageView1"
+            android:text="Healthy living lips\n2020\n★ 4.7 (250 reviews)"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/forYouTextView"
+        android:layout_width="369dp"
+        android:layout_height="232dp"
+        android:text="For you"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
