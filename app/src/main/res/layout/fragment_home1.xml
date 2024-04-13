@@ -6,6 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="19dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Trending Now"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="20dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="20dp"
+                android:layout_marginEnd="190dp"
+                />
+
+            <Button
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Global"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="20dp" />
+
+            <Button
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="20dp" />
+
+            <Button
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subscribe"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="20dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+
+    </LinearLayout>
+
+
+
+
     <Button
         android:id="@+id/button11"
         style="@style/Widget.Material3.Button.TextButton"
@@ -88,6 +168,204 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:ignore="TouchTargetSizeCheck" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="683dp"
+        android:layout_height="73dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shadow"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="857dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corner"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagenuno"
+            />
+
+        <RelativeLayout
+            android:layout_width="307dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="60pd"
+            android:layout_marginTop="60pd"
+            android:layout_marginEnd="60pd"
+            android:layout_marginBottom="60pd">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/imageView1"
+                android:text="Cycling Event Update"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="96dp"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/imageView1"
+                android:text="Cycling Event Update"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="600dp"
+            android:padding="6dp"
+            android:src="@drawable/guardar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="683dp"
+        android:layout_height="73dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/shadow"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1019dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corner"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagendos" />
+
+        <RelativeLayout
+            android:layout_width="307dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="60pd"
+            android:layout_marginTop="60pd"
+            android:layout_marginEnd="60pd"
+            android:layout_marginBottom="60pd">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/imageView1"
+                android:text="Risin Tennis Star"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="96dp"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/imageView1"
+                android:text="Must-"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="600dp"
+            android:padding="6dp"
+            android:src="@drawable/guardar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="683dp"
+        android:layout_height="73dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/shadow"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="937dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_corner"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagencuatro" />
+
+        <RelativeLayout
+            android:layout_width="307dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="60pd"
+            android:layout_marginTop="60pd"
+            android:layout_marginEnd="60pd"
+            android:layout_marginBottom="60pd">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/imageView1"
+                android:text="Transfer News in Football"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="96dp"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/imageView1"
+                android:text="Quick"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="600dp"
+            android:padding="6dp"
+            android:src="@drawable/guardar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -272,5 +550,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/noti"
         tools:layout_editor_absoluteY="285dp" />
+
+    <TextView
+        android:id="@+id/forYouTextView"
+        android:layout_width="338dp"
+        android:layout_height="37dp"
+        android:text="More News"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="820dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
