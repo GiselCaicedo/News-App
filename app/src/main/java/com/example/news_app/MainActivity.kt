@@ -7,6 +7,7 @@ import com.example.news_app.databinding.ActivityMainBinding
 import com.example.news_app.ui.dashboard.DashboardFragment
 import com.example.news_app.ui.home.HomeFragment
 import com.example.news_app.ui.notifications.NotificationsFragment
+import com.example.news_app.ui.search.SearchFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private val dashboardFragment = DashboardFragment()
     private val homeFragment = HomeFragment()
     private val notificationFragment = NotificationsFragment()
+    private val searchFragment = SearchFragment()
 
     private val onNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -29,6 +31,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.navigation_notifications -> {
                     loadFragment(notificationFragment)
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.navigation_search -> {
+                    loadFragment(searchFragment)
                     return@OnNavigationItemSelectedListener true
                 }
             }

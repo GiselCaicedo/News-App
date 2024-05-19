@@ -48,7 +48,7 @@
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Highlights"
                             android:textColor="#000"
-                            android:textSize="20sp" />
+                            android:textSize="24sp" />
                     </LinearLayout>
 
                     <androidx.appcompat.widget.SearchView
