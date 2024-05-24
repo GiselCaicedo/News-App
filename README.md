@@ -1,6 +1,6 @@
 # Aplicación de Noticias
 
-Este proyecto tiene como objetivo el desarrollo de una aplicación de noticias diseñada para dispositivos Android. La aplicación permitirá a los usuarios explorar y leer noticias de diversas fuentes, así como guardar sus artículos favoritos y recibir notificaciones sobre noticias relevantes.
+Este proyecto tiene como objetivo el desarrollo de una aplicación de noticias diseñada para dispositivos Android. La aplicación permitirá a los usuarios explorar y leer noticias de diversas fuentes.
 
 ## Estructura del Proyecto
 - **docs:** Contiene toda la documentación relacionada con el proyecto.
