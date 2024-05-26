@@ -8,12 +8,15 @@ La interfaz de usuario de la aplicación de noticias "NewsNow" se ha diseñado c
 
 
    [![Screen-4-Homepage.jpg](https://i.postimg.cc/Vk7Np2t0/Screen-4-Homepage.jpg)](https://postimg.cc/5XC1F7nf)
+   <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Wbs0NDs3/Head-Lines.png' border='0' alt='Head-Lines'/></a> 
+   <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/mZYQW3fJ/Noticia.png' border='0' alt='Noticia'/></a>
 
 ## Social Media
  Al seleccionar una noticia destacada, los usuarios acceden a una lista de titulares relevantes, lo que les permite navegar rápida y eficazmente por las noticias más importantes. La integración de botones para compartir en redes sociales fomenta la interacción y facilita que los usuarios compartan contenidos interesantes con sus contactos.
 
 
  [![Social-Media.jpg](https://i.postimg.cc/CKzKgJCP/Social-Media.jpg)](https://postimg.cc/SXb4L6vC)
+ <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/j24N6T4t/Favoritos.png' border='0' alt='Favoritos'/></a> 
 
 ## Search
 
@@ -21,6 +24,7 @@ La interfaz de usuario de la aplicación de noticias "NewsNow" se ha diseñado c
 
 
  [![Search.jpg](https://i.postimg.cc/13RtWy8Z/Search.jpg)](https://postimg.cc/SJ5kRFLZ)
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/D0L6tRQM/Busqueda.png' border='0' alt='Busqueda'/></a>
 
 ## Notifications
    La función de notificación está diseñada para informar a los usuarios de acontecimientos importantes. La pantalla de notificaciones permite a los usuarios recibir notificaciones instantáneas de las últimas noticias o actualizaciones relevantes, para que puedan mantenerse al tanto.
