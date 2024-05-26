@@ -33,6 +33,8 @@ class NewsAdapter: RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
     val differ = AsyncListDiffer(this, differCallback)
 
 
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
         return ArticleViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.item_news, parent, false)
@@ -63,7 +65,9 @@ class NewsAdapter: RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
 
             setOnClickListener {
                 onItemClickListener?.let {
-                    it(article)
+                    if (article.urlToImage != null && article.urlToImage.isNotEmpty()) {
+                        it(article)
+                    }
                 }
             }
         }

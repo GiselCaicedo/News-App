@@ -26,12 +26,13 @@ class ArticleFragment : Fragment(R.layout.fragment_article) {
         newsViewModel = (activity as NewsActivity).newsViewModel
         val article = args.article
 
-        binding.webView.apply {
-           webViewClient = WebViewClient()
-            article.url?.let {
-                loadUrl(it)
+            binding.webView.apply {
+                webViewClient = WebViewClient()
+                article.url?.let {
+                    loadUrl(it)
+                }
             }
-        }
+
 
         binding.fab.setOnClickListener {
             newsViewModel.addToFavourites(article)
