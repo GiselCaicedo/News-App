@@ -1,6 +1,6 @@
 # Aplicación de Noticias
 
-Este proyecto tiene como objetivo el desarrollo de una aplicación de noticias diseñada para dispositivos Android. La aplicación permitirá a los usuarios explorar y leer noticias de diversas fuentes.
+Este proyecto tiene como objetivo el desarrollo de una aplicación de noticias diseñada para dispositivos Android. La aplicación permitirá a los usuarios explorar y leer noticias de diversas fuentes, así como guardar sus artículos favoritos y recibir notificaciones sobre noticias relevantes.
 
 ## Estructura del Proyecto
 - **docs:** Contiene toda la documentación relacionada con el proyecto.
@@ -33,7 +33,3 @@ A continuación, se presentan algunos ejemplos de aplicaciones de noticias popul
 ## Origen de la Información
 
 La información para la aplicación se obtendrá mediante la integración de una API de noticias confiable. Se seleccionará una fuente que proporcione datos actualizados y relevantes para garantizar la calidad de la información presentada en la aplicación.
-
-
-<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Wbs0NDs3/Head-Lines.png' border='0' alt='Head-Lines'/></a> <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/mZYQW3fJ/Noticia.png' border='0' alt='Noticia'/></a> 
-<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/j24N6T4t/Favoritos.png' border='0' alt='Favoritos'/></a> <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/D0L6tRQM/Busqueda.png' border='0' alt='Busqueda'/></a>
